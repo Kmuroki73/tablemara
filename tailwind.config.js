@@ -1,0 +1,118 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+      },
+      colors: {
+        forest: {
+          50: '#eef6f1',
+          100: '#d5ebe0',
+          200: '#aad6c1',
+          300: '#74bb9c',
+          400: '#3f9c77',
+          500: '#1e7d58',
+          600: '#156344',
+          700: '#0f4d35',
+          800: '#0a3826',
+          900: '#062519',
+          950: '#03140d',
+        },
+        amber: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+        },
+        earth: {
+          50: '#faf7f2',
+          100: '#f2ece0',
+          200: '#e6d9c4',
+          300: '#d4bfa0',
+          400: '#c0a07a',
+          500: '#a8845a',
+          600: '#8c6b46',
+          700: '#6e5237',
+          800: '#503b29',
+          900: '#35271c',
+        },
+        cream: '#faf7f2',
+        sage: '#7a9e7e',
+        gold: {
+          50: '#fffdf0',
+          100: '#fef9d4',
+          200: '#fef0a0',
+          300: '#fde367',
+          400: '#fcd23a',
+          500: '#f5bc10',
+          600: '#d49c00',
+          700: '#b07d00',
+          800: '#8b6000',
+          900: '#6b4800',
+        },
+      },
+      spacing: {
+        18: '4.5rem',
+        22: '5.5rem',
+        26: '6.5rem',
+        30: '7.5rem',
+      },
+      fontSize: {
+        '2xs': '0.625rem',
+        '8xl': '5.5rem',
+        '9xl': '7rem',
+        '10xl': '9rem',
+      },
+      lineHeight: {
+        tight: '1.15',
+        snug: '1.3',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+      },
+      boxShadow: {
+        'soft': '0 2px 20px rgba(0,0,0,0.06)',
+        'medium': '0 4px 30px rgba(0,0,0,0.10)',
+        'strong': '0 8px 50px rgba(0,0,0,0.16)',
+        'forest': '0 4px 24px rgba(15,42,30,0.18)',
+        'amber': '0 4px 24px rgba(180,83,9,0.20)',
+        'gold': '0 4px 24px rgba(212,160,0,0.25)',
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.6s ease-out forwards',
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.5s ease-out forwards',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-24px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(24px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
